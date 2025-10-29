@@ -17,6 +17,13 @@ $(document).ready(function(){
         nextArrow:'<button type="button" class="slick-next as_btn"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="8" height="15" viewBox="0 0 8 15"> <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAPCAMAAADu1H4BAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAflBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADvEKCAAAAAKHRSTlMAwukcx+QNCdLUAwjfyRbuuyX4qzDhmWw27Iwt/p73uREP2svRBLXYnrw30wAAAAFiS0dEAIgFHUgAAAAJcEhZcwAALiMAAC4jAXilP3YAAABVSURBVAjXJctVEsAwCEXRpC6pu6epvf2vsBPg554ZQEjHFTQe/IAQRogTUqqQ8TIvULKqGg2r7dCzBoA6TphtlxUbfe04bLWCtD0NLjq8YR7C+2nqDzu8BZoG2fHJAAAAAElFTkSuQmCC" width="8" height="15"/> </svg></span></button>'
     });
 
+    
+
+
+
+
+
+
     // product slider
     $('.as_product_slider').slick({
         arrows: false,
@@ -179,15 +186,15 @@ $(document).ready(function(){
     // menu toggle
     $('.as_toggle').on('click',function(){
         $(this).parent().toggleClass('menu_open');
-        $(this).parent().find('.as_menu ul  li .as_submenu').parent().addClass('as_submenu_li')
+        $(this).parent().find('.navbar ul  li .as_submenu').parent().addClass('as_submenu_li')
     })
     // responsive menu
-    $(document).on('click','.as_menu > ul > li >a',function(){
+    $(document).on('click','.navbar > ul > li >a',function(){
       // console.log($(this).closest('li').find('ul.submenu'))
-      $('.as_menu >ul > li>.as_submenu').removeClass('active');
+      $('.navbar >ul > li>.as_submenu').removeClass('active');
       $(this).closest('li').find('>ul.as_submenu').addClass('active')
     })
-    $(document).on('click','.as_menu > ul > li > ul > li >a',function(){
+    $(document).on('click','.navbar > ul > li > ul > li >a',function(){
       // console.log($(this).closest('li').find('ul.submenu'))
       $(this).closest('li').find('>ul.as_submenu').toggleClass('active')
     })

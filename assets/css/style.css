@@ -363,9 +363,240 @@ a,a:hover,a:focus,a:visited{
     -moz-animation: spin 7s infinite linear;
 }
 /* header css start */ 
+body {
+      background-color: #0f0e13;
+    }
+    .navbar {
+      width: 100%;
+      background: #0f0e1363;
+      color: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      /* padding: -24px 60px; */
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      color: #000000;
+    }
+    .logo-section {
+      display: flex;
+      align-items: center;
+      justify-content:center; /* optional, centers logo */
+      padding: 0;
+      margin: 0px;
+      margin-left: -50px;
+      width: fit-content;
+      height: auto;
+    }
+    .logo-section img {
+      width: 51%;
+      height: 45%;
+      object-fit: contain;
+      display: block;
+    }
+    .logo-text h1 {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .logo-text p {
+      color: #f0b90b;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+    
+
+
+/* a {
+    position: relative;
+  }
+  
+  a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 40px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #F1C40F, #E74C3C);
+    border-radius: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  a:hover::before {
+    width: 100%;
+    border-radius: 50%;
+  } */
+
+
+
+
+
+
+
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 75px;
+  right: 30px;
+  left: 30px;
+  background-color: #0605079f;
+  border-radius: 8px;
+  min-width: 222px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 10;
+}
+
+.dropdown-content a {
+  color: #fff;
+  /* padding: 12px 20px; */
+  display: none;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dropdown-content a:hover {
+  /* background-color: #b883f9; */
+  color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.appointment-btn {
+  background-color: #b883f9;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.appointment-btn:hover {
+  background-color: #a36ef2;
+  transform: scale(1.05);
+}
+.newnavbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+    .nav-links a {
+      display: flex;
+      align-items: center;
+      color: #ddd;
+      text-decoration: none;
+      font-size: 25px;
+      margin: 30px 33px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .nav-links a:hover {
+      color: #f4a636;
+    }
+    .contact-section {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+    .contact-section i {
+      color: #c2c2c2;
+    }
+    .contact-section span {
+      color: #c2c2c2;
+      font-weight: 500;
+      font-size: 15px;
+      padding: 10px;
+    }
+    .contact-section span:hover{
+        color: #f4a636;
+    }
+    .appointment-btn {
+      background: linear-gradient(180deg, white,white );
+      color: black;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .appointment-btn:hover {
+      background: linear-gradient(135deg, #f4a636, #f4a636);
+      color: black;
+    }
+    
 .as_header_wrapper {
     display: inline-block;
-    background-color: rgb(17 16 17);
+    background-color: rgba(10, 7, 13, 0.651);
+    border-radius: 5%;
     position: absolute;
     padding: 5px 25px;
     display: list-item;
@@ -384,20 +615,21 @@ a,a:hover,a:focus,a:visited{
     display: inline-block;
     justify-items: center;
 }
+
 .Navbar_menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
     display: inline-flex;
-    justify-content: space-between;
     width: 373px;
     height: 129px;
 }
 .as_menu ul {
-    font-size: 42px !important;
-    flex-direction: revert;
+    /* font-size: 42px !important; */
+    /* flex-direction: revert; */
     position: absolute;
-    padding-top: 18px;
+    padding-top: 19px;
+    position-area: end;
     margin: 0;
     list-style: none;
     display: inline-flex;
@@ -698,13 +930,17 @@ a,a:hover,a:focus,a:visited{
     padding-block: 0;
     display: flex;
     flex-direction: column;
-    background-color: #000000;
+    background-color: rgba(10, 7, 13, 0.651);
+    border-radius: 7%;
     padding: -1px 140px;
     border-radius: 10px;
     width: 160px;
     z-index: 999;
     opacity: 0;
     visibility: hidden;
+}
+.submenu{
+    display: none;
 }
 .as_menu >ul >li >.as_submenu{
     transform: translateY(-10px);
@@ -907,6 +1143,9 @@ a,a:hover,a:focus,a:visited{
     color: var(--secondary-color);
     font-family: 'Philosopher', sans-serif;
     margin-right: 10px;
+}
+.contact_us{
+    background: white;
 }
 .as_contact_expert .as_icon:before{
     position: absolute;
@@ -3167,10 +3406,16 @@ form.d_block {
 .as_booking_section.as_payment{
     border: none;
 }
+ .newpoint{
+    background-color:white;
+}
 .as_booking_section ul {
     margin: 0;
     padding: 0;
+    top:50px;
     list-style: none;
+    justify-content: inline-block;
+    align-items: center;
 }
 
 .as_booking_section ul li {
@@ -3210,6 +3455,11 @@ form.d_block {
 }
 .as_shop_sidebar .as_widget:last-child {
     margin-bottom: 0;
+}
+
+
+.hamburger{
+    display: none;
 }
 
 /* Responsive css */
@@ -3875,8 +4125,162 @@ form.d_block {
     font-size: 24px;
 }
 }
+
 @media (max-width:355px){
     .as_info_box .as_icon {
         width: 50px;
     }
 }
+
+
+
+
+
+
+
+/* .mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #333;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-top: 1px solid #444;
+} */
+
+@media (max-width: 844px) {
+  /* .nav-links {
+    display:block;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    position: left;
+    padding: 20px;
+    border-radius: 8px;
+  }
+   .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+    .navbar{
+    justify-content: start;
+} */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    list-style: none;
+    top: 40px;
+    left:5px;
+    right: 0px;
+    width: 220px;
+    height: 390px;
+    padding: 0px;
+    border-radius: 10px 0 0 10px;
+    gap: 10px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  .nav-links li{
+    position: left;
+    justify-content: left;
+    align-items: left;
+  }
+
+
+  .nav-links.active {
+    display: flex;
+    justify-content: center;
+    position:center;
+    align-items: relative;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .newnavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    margin: 10px 0;
+    padding-bottom: 7px ;
+  }
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0;
+    height:51%;
+    width:45%;
+    margin: 0;
+    width: fit-content;
+    height: auto;
+}
+.contact{
+  display: none;
+}
+.appointment-btn{
+    display:none;
+    
+  }
+  .mobileMenu_appoinment{
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: none !important;
+}
+.submenu{
+    display:block;
+    list-style:none;
+  margin: 5px 10px 0 20px; /* indent and spacing below Appointment */
+  padding: 25px 10px 25px 10px;
+}
+
+
+}
+
+
+
+
+/* .submenu {
+  list-style: none;
+  top:80px;
+  left:150px;
+  margin-top: 35px;
+  background: ##0f0e1363;
+  border-radius: 5px;
+  padding: 0;
+  font-size: 24px;
+}
+
+.submenu li a {
+  padding: 10px 10px 10px 50px;
+  display: block;
+  color: white;
+}
+
+.submenu li a:hover {
+  background: #0f0e1363;
+} */
